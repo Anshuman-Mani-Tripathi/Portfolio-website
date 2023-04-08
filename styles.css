@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
+
 
 body
 {
@@ -9,13 +12,223 @@ body
    
 }
 
+/*Css video start from here*/
+
+
+
+
+
+
+#Vid-par{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #fff;
+ 
+}
+
+
+#vid-content{
+  text-align: center;
+  padding: 0 200px;
+  z-index: 2;
+
+
+
+
+}
+
+
+#anshuman_introduction_sample{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#main ul li {
+  position: relative;
+  background-color: green;
+  width: 100%;
+  height: 50px;
+  border: 1px solid white;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  }
+  
+  #main ul li:hover {
+  background-color: #4CAF50;
+  }
+  
+  #main ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+  }
+  
+  #main ul li:hover > ul {
+  display: block;
+  }
+  
+  #main ul ul li {
+  height: auto;
+  line-height: 30px;
+  width: 100%;
+  float: none;
+  background-color: #4CAF50;
+  }
+  
+  #main ul ul li:hover {
+  background-color: #3e8e41;
+  }
+  
+  #main ul ul ul {
+  position: absolute;
+  left: 100%;
+  top:0;
+  }
+
+
+/*Css video END from here*/
+
+/*Css popup menu start from here*/
+
+
+.container{
+  width:100%;
+  height: 3vh;
+  background: #3c5077;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn
+{
+  padding: 10px 60px;
+  background: green;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: #fff;
+}
+
+
+
+.Popup{
+  display: none;         
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-align:center;
+  color: #333;
+  transition: transform 0.4s,top 0.4s;
+  width: 1000px;
+  
+  
+}
+
+
+.open-popup
+{
+  display: block;
+}
+
+.Popup img
+{
+  width: 100px;
+  margin-top: 0px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.Popup h1
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+  
+}
+.Popup h2
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}
+
+.Popup p 
+{
+text-align: justify;
+}
+
+
+
+
+.Popup button[type="cross"]
+{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Css popup menu END from here*/
+/*Css drop down menu start from here*/
+
+
+
+
+
+
+
 .menu-bar{
     background-color: green;
     text-align: center;
    width: 100%;
 
-    
+
+   
 }
+
 
 .menu-bar ul
 {
@@ -24,32 +237,41 @@ body
     color: #fff;
 }
 
+
 .menu-bar ul li
 {
     width: 120px;
     margin: 0px;
     padding: 0px;
     background-color: green;
+    /* changes start */
+    
 }
+
 
 .menu-bar ul li a
 {
     text-decoration: none;
     color: #fff;
 
+
 }
 
-.active, 
+
+.active,
 .menu-bar ul li:hover
 {
     background:#2bab0d;
     border-radius: 3px;
+    z-index: 3;
 }
 
-.sub-menu-1
-{
-    display: none;
-}
+/*Css drop down menu correction start from here*/
+
+
+
+
+
 
 .menu-bar ul li:hover .sub-menu-1
 {
@@ -57,16 +279,22 @@ body
     position: absolute;
     background: rgb(0, 100, 0);
     margin-top: 15px;
-    margin-left: -15px;
+    z-index: 4;
+
+
+ margin-left: -15px;
+
 
 }
-
 .menu-bar ul li:hover .sub-menu-1 ul
 
+
+   
 {
     display: block;
     margin: 10px;
 }
+
 
 .menu-bar ul li:hover .sub-menu-1 ul li
 {
@@ -76,20 +304,22 @@ body
     background-color: transparent;
     border-radius: 0;
     text-align: left;
+    z-index: 5;
 }
+
 
 .menu-bar ul li:hover .sub-menu-1 ul li :last-child
 {
     border-bottom: none;
 
-}
 
+}
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
     color: #b2ff00 ;
 
-}
 
+}
 
 
 .sub-menu-2 {
@@ -100,10 +330,24 @@ body
     margin-left: 140px;
 }
 
+
 .menu-bar ul li.hover-me:hover .sub-menu-2 {
     display: block;
 }
 
 
+/*Css drop down menu correction end from here*/
+/*Css drop down menu END from here*/
+
+
+
+
   
+
+
+
+
+
+
+    
   
