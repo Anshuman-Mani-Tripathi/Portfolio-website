@@ -223,7 +223,7 @@ text-align: justify;
 .menu-bar{
     background-color: green;
     text-align: center;
-   width: 100%;
+   width: 100%; /* correction*/
 
 
    
@@ -241,8 +241,8 @@ text-align: justify;
 .menu-bar ul li
 {
     width: 120px;
-    margin: 0px;
-    padding: 0px;
+    margin: 15px; /*margin: 0px;padding: 0px; 15px  15px correction*/
+    padding: 15px;
     background-color: green;
     /* changes start */
     
@@ -258,12 +258,16 @@ text-align: justify;
 }
 
 
-.active,
-.menu-bar ul li:hover
+.active,.menu-bar ul li:hover
 {
     background:#2bab0d;
     border-radius: 3px;
-    z-index: 3;
+    z-index: 3; /* correction*/
+}
+
+.sub-menu-1 /* correction changes*/
+{
+  display: none;
 }
 
 /*Css drop down menu correction start from here*/
