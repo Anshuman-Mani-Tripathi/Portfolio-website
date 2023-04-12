@@ -212,6 +212,217 @@ text-align: justify;
 }
 
 /*Css popup menu END from here*/
+
+/*Css popup menu changes from here*/
+
+/*.Popup img
+{
+  width: 100px;
+  margin-top: 0px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.Popup h1
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+  
+}
+.Popup h2
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}
+
+.Popup p 
+{
+text-align: justify;
+}*/
+/* setting button code start */
+
+.Setting{
+  display: none;         
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-align:center;
+  color: #333;
+  transition: transform 0.4s,top 0.4s;
+  width: 1000px;
+  
+  
+}
+
+
+.open-Setting
+{
+  display: block;
+}
+
+
+.Setting_for_editing_btn
+{
+  padding: 10px 60px;
+  background: green;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: #fff;
+
+}
+
+.Setting Table
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}
+.Setting Table tr
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+} 
+.Setting Table tr td 
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}
+
+.Setting button[type="button"]
+{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Css popup menu changes End from here*/
+/*Setting button internal part Start*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid green;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*Setting button internal part End*/
+/* Home  Edit Button code start*/
+
+.Edit{
+  display: none;         
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-align:center;
+  color: #333;
+  transition: transform 0.4s,top 0.4s;
+  width: 1000px;
+  
+  
+}
+
+
+.open-Edit
+{
+  display: block;
+}
+
+
+.Home-Edit
+{
+  padding: 10px 60px;
+  background: green;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: #fff;
+
+}
+/*
+.Setting Table
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}
+.Setting Table tr
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+} 
+.Setting Table tr td 
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin:  10px;
+  font-weight: bold;
+}*/
+
+.Edit button[type="Home-Edit-button"]
+{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+/* Home  Edit Button code End*/
+
 /*Css drop down menu start from here*/
 
 
